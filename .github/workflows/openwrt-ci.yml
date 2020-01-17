@@ -10,9 +10,9 @@
 name: OpenWrt-syz
 
 on:
-  push:
-    branches: 
-      - master
+   push:
+     branches: 
+       - master
   #     ↑↑↑ 改成你的分支名, 一般是master
   # schedule:
   #   - cron: 0 20 * * *
@@ -167,6 +167,7 @@ jobs:
           CONFIG_PACKAGE_luci-app-webadmin=y
           CONFIG_PACKAGE_luci-app-wireguard=y
           CONFIG_PACKAGE_luci-app-wrtbwmon=y
+          CONFIG_PACKAGE_luci-app-nps=y
           EOF
 
           # LuCI主题:
