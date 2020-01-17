@@ -9,10 +9,10 @@
 
 name: OpenWrt-syz
 
- on:
-    push:
-      branches: 
-        - master
+on:
+  push:
+    branches: 
+      - CI-demo
   #     ↑↑↑ 改成你的分支名, 一般是master
   # schedule:
   #   - cron: 0 20 * * *
