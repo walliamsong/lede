@@ -64,6 +64,7 @@ jobs:
           mkdir openwrt-packages
           cd openwrt-packages
           git clone https://github.com/Ameykyl/luci-app-koolproxyR
+          git clone https://github.com/walliamsong/luci-app-passwall.git
 
       - name: Update feeds
         run: |
@@ -166,6 +167,7 @@ jobs:
           CONFIG_PACKAGE_luci-app-nps=y
           CONFIG_PACKAGE_luci-app-openvpn=y
           CONFIG_PACKAGE_luci-app-openvpn-server=y
+          CONFIG_PACKAGE_luci-app-passwall=y
           CONFIG_PACKAGE_luci-app-qbittorrent=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks=y
